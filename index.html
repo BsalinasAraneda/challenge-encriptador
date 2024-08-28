@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensaje</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="assets/svg/logo_alura.svg" alt="">
+    </header>
+
+    <main>
+        <form class="form__section">
+            <textarea class="form__input" id="form__input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="btn__container">
+                <div class="btn__container">
+                    <div class="alert__msj"><img src= "assets/svg/exclamation_icon.svg" alt="exclamation_logo"><span>Solo letras minúsculas y sin acentos</span></div>
+                </div>
+            <input class ="form__btn" type="submit" id="encriptar_btn" value="Encriptar">
+            <input class ="form__btn form__btn--secundary" type="submit" id="desencriptat_btn" value="Desencriptar">
+            </div>
+        </form>
+
+        <aside class="result">
+            <img src="assets/svg/logo_encryption_toy.svg" id="logo-aside-encription" alt="logo-aside-encription" class="result__img">
+            <div class="loader hidden" id="loader-bar"></div>
+            <div class="result__container">
+                <h3 class="result__title" id="result__title">Ningún mensaje fue encontrado</h3>
+                <p class="result__text" id="result__text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="result__btn form__btn form__btn--secundary hidden" id="result_btn">Copiar</button>
+            </div>
+        </aside>        
+
+    </main>
+    <script src="encriptador.js"></script>
+</body>
+</html>
